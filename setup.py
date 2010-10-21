@@ -9,6 +9,14 @@ setup(name='Fortune Engine',
       author_email='jlew.blackout@gmail.com',
       url='https://fedorahosted.org/fortune_hunter/wiki/FortuneEngine',
       packages=['fortuneengine','fortuneengine.pyconsole'],
-      package_data={'fortuneengine.pyconsole': ['*.cfg','fonts/*.ttf']},
+      package_dir = {
+        'fortuneengine': 'fortuneengine',
+        'fortuneengine.pyconsole': 'fortuneengine/pyconsole'
+      },
+      package_data={
+        'fortuneengine.pyconsole': [
+            '*.cfg',
+            'fonts/*',
+            ]},
       license="GPL 3",
      )
