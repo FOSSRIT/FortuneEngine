@@ -1,0 +1,3 @@
+recursive-include docs *
+recursive-include fortuneengine/pyconsole *.cfg
+recursive-include fortuneengine/pyconsole/fonts *.ttf
