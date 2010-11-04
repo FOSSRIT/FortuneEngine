@@ -476,8 +476,13 @@ class GameEngine(object):
         Removes an object from the game engine datastore
 
         @param name:     The name of the object to remove
+        @return:         Returns true on successful removal
         """
-        del self.__object_hold[name]
+        try:
+            del self.__object_hold[name]
+            return True
+        except:
+            return False
 
     def list_objects(self):
         """
