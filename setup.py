@@ -7,7 +7,7 @@ setup(name='Fortune Engine',
       description='The Fortune Game Engine',
       author='Justin Lewis',
       author_email='jlew.blackout@gmail.com',
-      url='https://fedorahosted.org/fortune_hunter/wiki/FortuneEngine',
+      url='https://github.com/FOSSRIT/FortuneEngine',
       packages=['fortuneengine','fortuneengine.pyconsole'],
       package_dir = {
         'fortuneengine': 'fortuneengine',
